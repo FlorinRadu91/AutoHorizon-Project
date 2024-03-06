@@ -1,57 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AutoHorizon</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="js/all.js"></script>
+  <title>AutoHorizon</title>
+  <style>
+  </style>
 </head>
-<body>  
 
-  <!-- Header -->
-  <header class="header">
-   <nav class="box">
-      <div class="logo"><i class="fas fa-car">AutoHorizon</i></div>
-      <ul>
-       <li class="item"><a href="#" class="selected">Home</a></li>
-       <li class="item"><a href="#">Features</a></li>
-       <li class="item"><a href="#">Price</a></li>
-       <li class="item"><a href="#">Contact</a></li>
-       <li class="item"><a href="#" class="highlight">Book Appointment</a></li>
-      </ul>
-   </nav>
-   <div class="content">
-    <div class="box">
-      <h1>We will repair your car</h1>
-      <p>Visit us and be surprized</p>
-      <a class="highlight" href="#">Book Appointment</a>
-    </div>
+<body>
+ <!-- preloader -->
+ <div class="preloader d-flex justify-content-center align-items-center">
+   <img src="img/preloader.gif" alt="preloader">
+ </div>
+
+
+ <!-- end preloader -->
+ <!-- nav element -->
+ <nav class="navbar navbar-expand-lg px-3" id="navBar">
+   <a href="#" class="navbar-brand">
+     <img src="img/gearLogo.png" alt="logo">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#myNav'>
+     <span class="navbar-icon">
+       <i class="fas fa-bars"></i>
+     </span>
+   </button>
+   <!--  -->
+   <div class="collapse navbar-collapse" id="myNav">
+     <ul class="navbar-nav mx-auto">
+       <li class="nav-item active">
+         <a href="#navBar" class="nav-link">
+           home
+         </a>
+       </li>
+       <li class="nav-item">
+         <a href="#skills" class="nav-link">
+           skills
+         </a>
+       </li>
+       <li class="nav-item">
+         <a href="#inventory" class="nav-link">
+           inventory
+         </a>
+       </li>
+       <li class="nav-item">
+         <a href="#featured" class="nav-link">
+           featured
+         </a>
+       </li>
+     </ul>
+     <!-- social icons -->
+     <div class="nav-icons d-none d-lg-block">
+       <a href="#" class="nav-icon">
+         <i class="fab fa-facebook"></i>
+       </a>
+       <a href="#" class="nav-icon">
+         <i class="fab fa-twitter"></i>
+       </a>
+       <a href="#" class="nav-icon">
+         <i class="fab fa-instagram"></i>
+       </a>
+     </div>
    </div>
-  </header>
+ </nav>
+ <!-- end of nav element -->
+ <!-- header section -->
+ <header class="header" id="header">
+   <div class="container-fluid">
+     <div class="row height-max align-items-center">
+       <div class="col col-md-9 ml-auto text-right pr-5">
+         <h5 class="title-heading d-inline-block p-2 text-uppercase">the all new</h5>
+         <h2 class="text-uppercase my-2 title">2020 Lotus</h2>
+         <h3 class="text-uppercase">model name</h3>
+         <h6 class="text-capitalize">starts from</h6>
+         <h2>$60,000 <a href="" class="title-icon d-inline-block mx-2">
+             <i class="fas fa-play"></i>
+           </a></h2>
+       </div>
+     </div>
+   </div>
+ </header>
+ <!--end of  header section -->
+ <!-- skills section -->
+ <section class="skills py-5" id="skills">
+  <div class="container">
+    <!-- section title -->
+    <div class="row mb-5">
+      <div class="col d-flex flex-wrap text-uppercase justify-content-center">
+        <h1 class="font-weight-bold align-self-center mx-1">why choose</h1>
+        <h1 class="section-title--special mx-1">car dealer</h1>
+      </div>
+    </div>
+    <!-- end of section title -->
+    <div class="row">
+      <!-- single skill -->
+      <div class="col-sm-6 col-lg-3 text-center my-3">
+        <a href="" class="skills-icon p-2 rounded-circle">
+          <i class="fas fa-car fa-fw"></i>
+        </a>
+        <h6 class="text-uppercase font-weight-bold my-3">all brands</h6>
+        <div class="skills-underline"></div>
+        <p class="w-75 mx-auto text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aperiam!</p>
+      </div>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <div class="col-sm-6 col-lg-3 text-center my-3">
+        <a href="" class="skills-icon p-2 rounded-circle">
+          <i class="fas fa-comments fa-fw"></i>
+        </a>
+        <h6 class="text-uppercase font-weight-bold my-3">free support</h6>
+        <div class="skills-underline"></div>
+        <p class="w-75 mx-auto text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aperiam!</p>
+      </div>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <div class="col-sm-6 col-lg-3 text-center my-3">
+        <a href="" class="skills-icon p-2 rounded-circle">
+          <i class="fas fa-people-carry fa-fw"></i>
+        </a>
+        <h6 class="text-uppercase font-weight-bold my-3">caring</h6>
+        <div class="skills-underline"></div>
+        <p class="w-75 mx-auto text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aperiam!</p>
+      </div>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <div class="col-sm-6 col-lg-3 text-center my-3">
+        <a href="" class="skills-icon p-2 rounded-circle">
+          <i class="fas fa-wallet fa-fw"></i>
+        </a>
+        <h6 class="text-uppercase font-weight-bold my-3">affordable</h6>
+        <div class="skills-underline"></div>
+        <p class="w-75 mx-auto text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aperiam!</p>
+      </div>
+      <!-- end of single skill -->
+    </div>
+  </div>
 
-  <!-- End of Header -->
+</section>
+<!-- end of skills section -->
 
-  <!-- Footer -->
-  
-  <footer class="footer">
-   <ul class="box">
-    <li>
-     <strong>Our location</strong>
-     <p>Park Street Boulevard 4210 </p>
-    </li>
-    <li>
-     <strong>Phone number</strong>
-     <p>+44  077 2773 3094</p>
-    </li>
-    <li>
-     <strong>Email</strong>
-     <p>autohorizon@repair.com.uk</p>
-    </li>
-   </ul>
-  </footer>
 
-  <!--End of Footer -->
-</body>
-</html>
+   <!-- jquery -->
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <!-- bootstrap js -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <!-- script js -->
+   <script src="js/script.js"></script>
+ </body>
