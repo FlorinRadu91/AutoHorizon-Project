@@ -73,7 +73,7 @@ body{
 }
 .height-max{
   min-height: calc(100vh - 76px);
-  background:url('../img/ford-mustang.jpg');
+  background:url('../img/bmw-1.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -155,7 +155,7 @@ body{
 }  
 /* question */
 .question{
-  background: url('../img/questionBcg.jpeg')center/cover fixed no-repeat;
+  background: url('../img/showroom-bg.jpg')center/cover fixed no-repeat;
 }
 .question-grey{
   background: rgba(79,109,122,0.75);
@@ -228,3 +228,30 @@ color: var(--mainBlue);
 .img-container:hover .featured-link{
   opacity: 1;
 }
+
+/* gallery  */
+.gallery-item{
+  background: var(--mainYellow);
+  position: relative;
+  cursor: pointer;
+}
+.gallery-img{
+  transition: all 1s ease-in-out;
+}
+.gallery-item:hover .gallery-img{
+opacity: 0.5;
+}
+.gallery-item::after{
+  content: "";
+  position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ outline: 0.5rem solid var(--mainWhite);
+ outline-offset: -2rem;
+ transition: all 1s ease-in-out;
+ transform: scale(0);
+}
+.gallery-item:hover:after{
+  transform: scale(1);
